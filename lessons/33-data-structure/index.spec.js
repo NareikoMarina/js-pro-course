@@ -56,6 +56,15 @@ describe('Base algorithms', () => {
       expect(workersTable.map instanceof Map).toBeTruthy()
     })
 
+    it('Should remove employee by name', () => {
+      workersTable.add({ name: 'Alex', age: 25 })
+      workersTable.add({ name: 'Dan', age: 29 })
+      workersTable.add({ name: 'Dan123', age: 29 })
+      expect(workersTable.find('Dan123')).toBeDefined()
+      workersTable.removeByName('Dan123')
+      expect(workersTable.find('Dan123')).not.toBeDefined()
+    })
+
     it('Should convert first letter to key and add to map', () => {
       const key1 = workersTable.add({ name: 'Alex', age: 25 })
       workersTable.add({ name: 'Alex2', age: 23 })
