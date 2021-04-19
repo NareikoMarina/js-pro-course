@@ -1,0 +1,18 @@
+{
+  "name": "lalalalala",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Marina",
+  "license": "ISC",
+  "dependencies": {
+    "eslint": "^7.24.0",
+    "eslint-config-airbnb-base": "^14.2.1",
+    "eslint-plugin-import": "^2.22.1",
+    "only-my-first-package": "^1.0.1-beta.0"
+  }
+}
