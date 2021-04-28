@@ -11,20 +11,23 @@ const render = () => {
     Header()
   )
   if (window.location.pathname === '/home' || window.location.pathname === '/') {
-    // import('./components/Content')
-    //   .then(({ default: contentModule }) => {
-    //     console.log(contentModule)
-    //     root.appendChild(contentModule())
-    //   })
     root.appendChild(
       Content()
     )
   }
   if (window.location.pathname === '/contacts') {
-    root.appendChild(
-      Contacts()
-    )
+    import('./components/Contacts')
+      .then(({ default: contactsModule }) => {
+        root.appendChild(contactsModule())
+      })
   }
+}
+
+if (module.hot) {
+  module.hot.accept('./components/Header', () => {
+    console.log('Accepting the update printMe module!');
+    render();
+  })
 }
 
 render()
