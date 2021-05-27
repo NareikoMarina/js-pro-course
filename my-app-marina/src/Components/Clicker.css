@@ -1,0 +1,54 @@
+.container {
+    display: grid;
+    place-items: center;
+    grid-template-columns: 70px 70px 70px;
+    border: 2px solid slategrey;
+    border-radius: 2px;
+    margin: 10px 10px;
+}
+
+.value {
+    display: flex;
+    grid-column: 1/4;
+    grid-row: 1;
+    justify-content: center;
+    align-items: center;
+    color: rgb(73, 73, 73);
+    height: 100px;
+    font-size: 60px;
+}
+
+.button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    width: 70px;
+    height: 50px;
+    border-top: 1px solid slategrey;
+}
+
+.button:hover {
+    opacity: 0.6;
+}
+
+.button__icon {
+    width: 30px;
+    height: 30px;
+    object-fit: scale-down;
+    grid-column: 1;
+    grid-row: 2;
+}
+
+.button__plus {
+    background-color: #85ee89;
+}
+
+.button__reset {
+    background-color: #f4f07d;
+}
+
+.button__minus {
+    background-color: #ea5f5f;
+}
+
