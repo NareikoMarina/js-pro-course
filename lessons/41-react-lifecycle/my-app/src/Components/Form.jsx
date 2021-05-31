@@ -22,7 +22,7 @@ const Form = () => {
 
     return (
         <div className = 'form-container'>
-            <input className = 'search-input' type = 'text' onChange = {searchEmoji}/>
+            <input className = 'search-input' type = 'text' onClick = {searchEmoji.length >= 15 ? searchEmoji.slice(0, 15) : searchEmoji} onChange = {searchEmoji}/>
             <EmojiContainer emojiSearch = {emojiSearch.length >= 15 ? emojiSearch.slice(0, 15) : emojiSearch} />
         </div>
     )
