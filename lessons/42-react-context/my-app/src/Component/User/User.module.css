@@ -1,0 +1,9 @@
+.users {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 10px;
+    font-size: 18px;
+    color: #c482bb;
+    font-weight: bold;
+}

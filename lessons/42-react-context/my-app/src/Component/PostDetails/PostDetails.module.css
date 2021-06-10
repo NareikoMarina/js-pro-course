@@ -1,0 +1,35 @@
+.details, .comments {
+    display: flex;
+    flex-direction: column;
+    width: 800px;
+    margin: 0 auto;
+    padding: 10px;
+    border: 2px solid rgb(29, 29, 29);
+    margin-bottom: 10px;
+    border-radius: 4px;
+}
+
+.details__header, .comments__header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #5066ea;
+    text-transform: uppercase;
+}
+
+.details__title, .comments__body  {
+    margin: 0 auto;
+    text-transform: uppercase;
+    font-size: 20px;
+    color: #c482bb;
+    padding-bottom: 10px;
+}
+
+.details__body, .comments__name, .comments__email {
+    margin: 0 auto;
+    color: #828282;
+}
+
+.comments__email {
+    margin-bottom: 30px;
+}

@@ -1,0 +1,28 @@
+.list {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    flex-wrap: wrap;
+}
+
+.item {
+    margin: 1em;
+    min-height: 30em;
+    display: flex;
+    width: calc(25% - 2em);
+}
+
+.showMore {
+    text-align: center;
+    padding: 1em;
+}
+
+.link {
+    color: #c482bb;
+    text-decoration: none;
+}
+
+.link:hover {
+    text-decoration: underline;
+}
